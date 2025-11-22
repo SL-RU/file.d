@@ -9,7 +9,7 @@ GOARCH ?= amd64
 .PHONY: build
 build: 
 	echo "Building for $(GOOS) $(GOARCH)..."
-	go build -trimpath -ldflags "-X github.com/ozontech/file.d/buildinfo.Version=${VERSION}" -o file.d ./cmd/file.d
+	go build -trimpath -ldflags "-w -X github.com/ozontech/file.d/buildinfo.Version=${VERSION}" -o file.d ./cmd/file.d
 
 .PHONY: cover
 cover:

@@ -1,5 +1,10 @@
 ![file.d](/static/file.d.png)
 
+# Make for arm32
+```
+GCCGO=/path-to/arm-rockchip830-linux-uclibcgnueabihf/bin/arm-rockchip830-linux-uclibcgnueabihf-gccgo GOARCH=arm GOARM=7 SKIP_GOLANGCI_LINT=y make
+```
+
 # Overview
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/ozontech/file.d/graphs/commit-activity)
 [![CI](https://github.com/ozontech/file.d/actions/workflows/ci.yml/badge.svg)](https://github.com/ozontech/file.d/actions/workflows/go.yml)
